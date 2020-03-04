@@ -2,21 +2,21 @@
 
 A Google Chrome extension to super power your Basecamp 3 experience
 
-## Screenshots
+## 🖼 Screenshots
 
 ![Promo](images/promo.png)
 
-## Functionality
+## 🧾 Functionality
 - [x] Adds a bordered bar to the top of your screen themed to your Basecamp selection
 - [x] Swaps out the generic Basecamp logo with the company name
 - [x] Make the toolbar sticky as the user scrolls the page
 
-## Installing
+## 📦 Installing
 
-### Stable from Chrome Web Store
+### ✅ Stable from Chrome Web Store
 [The Chrome Web Store](https://chrome.google.com/webstore/detail/basecamp-enhancer/hllgadpbecmjmfbjpclnjhlppanhalmk) contains the latest stable version of the extension.
 
-### Beta from GitHub
+### 🐞 Beta from GitHub
 You can optionally run the beta by directly installing the extension within Chrome. To install:
 
 1. Download [the zip of the project](https://github.com/aaronbushnell/basecamp-enhancer/archive/master.zip)
@@ -24,4 +24,4 @@ You can optionally run the beta by directly installing the extension within Chro
 3. Navigate your browser to the [Extensions](chrome://extensions/) panel `chrome://extensions/`
 4. Turn on "Developer mode"
 5. Click "Load unpacked"
-6. Select the unzipped "basecamp-enhancer" folder
+6. Select the unzipped folder
