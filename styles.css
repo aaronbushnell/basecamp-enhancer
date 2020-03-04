@@ -1,0 +1,45 @@
+/* Show theme border on top of page */
+html {
+  padding-top: 10px;
+}
+
+.nav__bar {
+  border-top: 10px solid #283c46;
+}
+
+html[data-theme="blue"] .nav__bar {
+  border-top-color: #1b6ac9;
+}
+
+html[data-theme="purple"] .nav__bar {
+  border-top-color: #725ead;
+}
+
+html[data-theme="green"] .nav__bar {
+  border-top-color: #2da562;
+}
+
+html[data-theme="orange"] .nav__bar {
+  border-top-color: #d4442e;
+}
+
+html[data-theme="charcoal"] .nav__bar {
+  border-top-color: #596568;
+}
+
+/* Swap BC logo with name of BC */
+.nav__link--accounts {
+  background: none !important;
+  text-align: left !important;
+  position: relative;
+  white-space: nowrap;
+}
+
+.basecamp-enhancer__logo-label {
+  font-size: 1.85rem;
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+  width: 100%;
+}

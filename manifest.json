@@ -1,0 +1,20 @@
+{
+  "name": "Basecamp Enhancer",
+  "version": "1.0.1",
+  "description": "A simple extension to add small enhancements to your Basecamp experience!",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["scripts.js"],
+      "matches": ["https://3.basecamp.com/*"]
+    }
+  ],
+  "permissions": ["https://3.basecamp.com/*"],
+  "icons": {
+    "16": "images/logo-16.png",
+    "32": "images/logo-32.png",
+    "48": "images/logo-48.png",
+    "128": "images/logo-128.png"
+  }
+}
