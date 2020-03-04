@@ -20,8 +20,7 @@ A Google Chrome extension to super power your Basecamp 3 experience
 You can optionally run the beta by directly installing the extension within Chrome. To install:
 
 1. Download [the zip of the project](https://github.com/aaronbushnell/basecamp-enhancer/archive/master.zip)
-2. Unzip the project
+2. Unzip the project (but do not delete the folder after finishing the install; Chrome continues to read from this location)
 3. Navigate your browser to the [Extensions](chrome://extensions/) panel `chrome://extensions/`
 4. Turn on "Developer mode"
-5. Click "Load unpacked"
-6. Select the unzipped folder
+5. Drag the unzipped folder to the window and allow Chrome to finish the installation
