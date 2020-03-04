@@ -43,3 +43,15 @@ html[data-theme="charcoal"] .nav__bar {
   transform: translateY(-50%);
   width: 100%;
 }
+
+/* Sticky the perma toolbar on todo items */
+.basecamp-enhancer #main-content .perma-toolbar {
+  position: sticky;
+  top: 65px;
+  background: rbga(255, 255, 255, 0.5);
+  padding: 1rem 0;
+}
+
+.basecamp-enhancer #main-content .panel--perma {
+  padding-top: 1rem;
+}

@@ -1,4 +1,8 @@
 (() => {
+  // Add a class to the body to style in a more gentle way
+  document.querySelector("body").classList.add("basecamp-enhancer");
+
+  // Swap the generic Basecamp logo with the company name
   const BCName = document.querySelector("meta[name='current-account-name']")
     .content;
 
