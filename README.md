@@ -27,6 +27,6 @@ You can optionally run the beta by directly installing the extension within Chro
 
 ## 🗓 Changelog
 
-- 1.1.0 - Make toolbar sticky as the user scrolls the page
-- 1.0.1 - Small bug fixes to correct when the extension fires on the page
-- 1.0.0 - Initial release
+- **1.1.0**: Make toolbar sticky as the user scrolls the page
+- **1.0.1**: Small bug fixes to correct when the extension fires on the page
+- **1.0.0**: Initial release
