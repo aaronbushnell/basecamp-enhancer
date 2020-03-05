@@ -24,3 +24,9 @@ You can optionally run the beta by directly installing the extension within Chro
 3. Navigate your browser to the [Extensions](chrome://extensions/) panel `chrome://extensions/`
 4. Turn on "Developer mode"
 5. Drag the unzipped folder to the window and allow Chrome to finish the installation
+
+## 🗓 Changelog
+
+- 1.1.0 - Make toolbar sticky as the user scrolls the page
+- 1.0.1 - Small bug fixes to correct when the extension fires on the page
+- 1.0.0 - Initial release

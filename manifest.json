@@ -1,6 +1,6 @@
 {
   "name": "Basecamp Enhancer",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A simple extension to add small enhancements to your Basecamp experience!",
   "manifest_version": 2,
   "content_scripts": [
