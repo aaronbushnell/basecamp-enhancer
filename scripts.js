@@ -27,6 +27,11 @@ function addCompanyDetails() {
  * Attempt to add the todo list details into a todo item
  */
 function addListDetailsToTodoItem() {
+  // Don't bother adding the item if it already exists
+  if (document.querySelector(".todolist-details")) {
+    return false;
+  }
+
   // If this is a todo, let's try to pull in the todolist details
   if (/\/\d+\/buckets\/\d+\/todos\/\d+/.test(window.location.href)) {
     // Do we have access to a todolist URL?
