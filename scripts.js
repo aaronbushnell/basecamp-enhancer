@@ -2,6 +2,11 @@
  * Add a class to the body to style in a more gentle way
  */
 function addBodyClass() {
+  // Don't continue to add classes to the body if it already exists
+  if (document.querySelector("body").classList.contains("basecamp-enhancer")) {
+    return false;
+  }
+
   document.querySelector("body").classList.add("basecamp-enhancer");
 }
 
@@ -9,6 +14,11 @@ function addBodyClass() {
  * Swap the generic Basecamp logo with the company name
  */
 function addCompanyDetails() {
+  // If the logo has already been added just exit out
+  if (document.querySelector(".basecamp-enhancer__logo-label")) {
+    return false;
+  }
+
   const BCName = document.querySelector("meta[name='current-account-name']")
     .content;
 
@@ -22,6 +32,11 @@ function addCompanyDetails() {
  * Attempt to add the todo list details into a todo item
  */
 function addListDetailsToTodoItem() {
+  // Don't bother adding the item if it already exists
+  if (document.querySelector(".todolist-details")) {
+    return false;
+  }
+
   // If this is a todo, let's try to pull in the todolist details
   if (/\/\d+\/buckets\/\d+\/todos\/\d+/.test(window.location.href)) {
     // Do we have access to a todolist URL?
@@ -40,7 +55,8 @@ function addListDetailsToTodoItem() {
           const doc = new DOMParser().parseFromString(html, "text/html");
           const listTitle = doc.querySelector("[data-bridge-alt]").innerText;
           const listDesc = doc.querySelector(".todolist__description")
-            .innerText;
+            ? doc.querySelector(".todolist__description").innerText
+            : "";
 
           document.querySelector(".todo-perma__details").insertAdjacentHTML(
             "beforebegin",

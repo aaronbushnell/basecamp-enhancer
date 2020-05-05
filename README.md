@@ -27,6 +27,7 @@ You can optionally run the beta by directly installing the extension within Chro
 
 ## 🗓 Changelog
 
+- **1.2.1**: Prevent a variety of events from re-firing on navigation change
 - **1.2.0**: Run events on Turbolink navigation changes; Add list details to todo items; Fix client visibility bubble placement
 - **1.1.0**: Make toolbar sticky as the user scrolls the page
 - **1.0.1**: Small bug fixes to correct when the extension fires on the page
