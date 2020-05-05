@@ -55,3 +55,38 @@ html[data-theme="charcoal"] .nav__bar {
 .basecamp-enhancer #main-content .panel--perma {
   padding-top: 1rem;
 }
+
+/* Todolist details on todo pages */
+.todolist-details {
+  font-size: 12px;
+  max-width: 500px;
+  margin: 10px auto 20px;
+  background: #cbeef9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.todolist-details h4 {
+  position: absolute;
+  top: -10px;
+  background: #30444f;
+  color: #fff;
+  margin: 0;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.todolist-details h2 {
+  margin: 3px 0 5px;
+  font-size: 15px;
+}
+
+.todolist-details p {
+  margin: 0;
+}
+
+/* Client visibility bubble */
+.client-visibility-flag--for-perma {
+  top: 110px !important;
+}
