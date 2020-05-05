@@ -2,6 +2,11 @@
  * Add a class to the body to style in a more gentle way
  */
 function addBodyClass() {
+  // Don't continue to add classes to the body if it already exists
+  if (document.querySelector("body").classList.contains("basecamp-enhancer")) {
+    return false;
+  }
+
   document.querySelector("body").classList.add("basecamp-enhancer");
 }
 
