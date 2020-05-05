@@ -23,7 +23,7 @@ function addCompanyDetails() {
  */
 function addListDetailsToTodoItem() {
   // If this is a todo, let's try to pull in the todolist details
-  if (/\/\d+\/buckets\/\d+\/todos\/\d+.*/.test(window.location.href)) {
+  if (/\/\d+\/buckets\/\d+\/todos\/\d+/.test(window.location.href)) {
     // Do we have access to a todolist URL?
     const $todoLink = document.querySelector(
       ".recording-breadcrumb__link:last-of-type [data-target='breadcrumbs.link']"
