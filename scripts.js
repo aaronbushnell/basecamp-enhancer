@@ -9,6 +9,11 @@ function addBodyClass() {
  * Swap the generic Basecamp logo with the company name
  */
 function addCompanyDetails() {
+  // If the logo has already been added just exit out
+  if (document.querySelector(".basecamp-enhancer__logo-label")) {
+    return false;
+  }
+
   const BCName = document.querySelector("meta[name='current-account-name']")
     .content;
 
