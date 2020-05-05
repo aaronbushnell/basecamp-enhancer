@@ -40,7 +40,8 @@ function addListDetailsToTodoItem() {
           const doc = new DOMParser().parseFromString(html, "text/html");
           const listTitle = doc.querySelector("[data-bridge-alt]").innerText;
           const listDesc = doc.querySelector(".todolist__description")
-            .innerText;
+            ? doc.querySelector(".todolist__description").innerText
+            : "";
 
           document.querySelector(".todo-perma__details").insertAdjacentHTML(
             "beforebegin",
