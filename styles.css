@@ -36,12 +36,33 @@ html[data-theme="charcoal"] .nav__bar {
 }
 
 .basecamp-enhancer__logo-label {
-  font-size: 1.85rem;
+  color: black;
+  display: none;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 0.8rem;
   transform: translateY(-50%);
   width: 100%;
+}
+
+@media (min-width: 460px) {
+  .basecamp-enhancer__logo-label {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .basecamp-enhancer__logo-label {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .basecamp-enhancer__logo-label {
+    display: block;
+    font-size: 1.85rem;
+  }
 }
 
 /* Sticky the perma toolbar on todo items */

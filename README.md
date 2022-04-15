@@ -27,6 +27,7 @@ You can optionally run the beta by directly installing the extension within Chro
 
 ## 🗓 Changelog
 
+- **1.3.0**: Fix color schemes for logo and conditionally show logo for better tablet/mobile experiences
 - **1.2.1**: Prevent a variety of events from re-firing on navigation change
 - **1.2.0**: Run events on Turbolink navigation changes; Add list details to todo items; Fix client visibility bubble placement
 - **1.1.0**: Make toolbar sticky as the user scrolls the page
