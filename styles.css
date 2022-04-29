@@ -65,16 +65,18 @@ html[data-theme="charcoal"] .nav__bar {
   }
 }
 
-/* Sticky the perma toolbar on todo items */
-.basecamp-enhancer #main-content .perma-toolbar {
-  position: sticky;
-  top: 65px;
-  background: rbga(255, 255, 255, 0.5);
-  padding: 1rem 0;
-}
+@media (min-width: 1120px) {
+  /* Sticky the perma toolbar on todo items */
+  .basecamp-enhancer #main-content .perma-toolbar {
+    position: fixed;
+    top: 65px;
+  }
 
-.basecamp-enhancer #main-content .panel--perma {
-  padding-top: 1rem;
+  /* Add shadows to elements in perma toolbar at the sticky size */
+  .basecamp-enhancer #main-content .perma-toolbar .harvest-timer,
+  .basecamp-enhancer #main-content .perma-toolbar .action-sheet button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  }
 }
 
 /* Todolist details on todo pages */
