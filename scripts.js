@@ -86,10 +86,3 @@ document.addEventListener("turbolinks:load", () => {
   addCompanyDetails();
   addListDetailsToTodoItem();
 });
-
-/**
- * Run the events when the document runs
- */
-addBodyClass();
-addCompanyDetails();
-addListDetailsToTodoItem();
