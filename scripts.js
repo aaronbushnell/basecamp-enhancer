@@ -19,8 +19,9 @@ function addCompanyDetails() {
     return false;
   }
 
-  const BCName = document.querySelector("meta[name='current-account-name']")
-    .content;
+  const BCName = document.querySelector(
+    "meta[name='current-account-name']"
+  ).content;
 
   const node = document.createElement("span");
   node.innerText = BCName;
@@ -41,13 +42,13 @@ function addListDetailsToTodoItem() {
   if (/\/\d+\/buckets\/\d+\/todos\/\d+/.test(window.location.href)) {
     // Do we have access to a todolist URL?
     const $todoLink = document.querySelector(
-      ".recording-breadcrumb__link:last-of-type [data-target='breadcrumbs.link']"
+      ".recording-breadcrumb__link:last-of-type [data-breadcrumbs-target='link']"
     );
 
     if ($todoLink && /todolists/.test($todoLink.href))
       fetch(
         document.querySelector(
-          ".recording-breadcrumb__link:last-of-type [data-target='breadcrumbs.link']"
+          ".recording-breadcrumb__link:last-of-type [data-breadcrumbs-target='link']"
         ).href
       )
         .then((response) => response.text())
