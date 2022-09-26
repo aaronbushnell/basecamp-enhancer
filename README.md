@@ -27,6 +27,7 @@ You can optionally run the beta by directly installing the extension within Chro
 
 ## 🗓 Changelog
 
+- **1.3.2**: Fix selectors to ensure logo is properly hidden
 - **1.3.1**: Fix selectors to ensure todo list details are pulled in. Address sticky toolbar to prevent it from disallowing click-thrus to todo details
 - **1.3.0**: Fix color schemes for logo and conditionally show logo for better tablet/mobile experiences
 - **1.2.1**: Prevent a variety of events from re-firing on navigation change

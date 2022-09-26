@@ -32,7 +32,14 @@ html[data-theme="charcoal"] .nav__bar {
   background: none !important;
   text-align: left !important;
   position: relative;
+  overflow: visible !important;
+  margin-left: 0 !important;
+  font-weight: bold;
   white-space: nowrap;
+}
+
+.nav__link--accounts svg {
+  display: none;
 }
 
 .basecamp-enhancer__logo-label {
